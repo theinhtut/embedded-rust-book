@@ -1,0 +1,9 @@
+[workspace]
+members = [
+  "src/02-qemu",
+]
+
+[profile.release]
+codegen-units = 1
+debug = true
+lto = true
