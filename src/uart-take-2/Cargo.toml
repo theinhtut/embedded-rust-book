@@ -1,0 +1,26 @@
+[package]
+name = "uart-take-2"
+version = "0.1.0"
+authors = ["Thein Htut <theinhtut.dec@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = "0.6.4"
+cortex-m-rt = "0.6.13"
+cortex-m-semihosting = "0.3.3"
+panic-halt = "0.2.0"
+usb-device = "0.2"
+usbd-serial = "0.1"
+
+[dependencies.stm32f3xx-hal]
+version = "0.6.1"
+features = ["stm32f303xc"]
+
+[dev-dependencies]
+
+
+# [dependencies.stm32f3]
+# version = "0.12.1"
+# features = ["stm32f301", "rt"]

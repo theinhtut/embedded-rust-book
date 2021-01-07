@@ -1,6 +1,7 @@
 [workspace]
 members = [
   "src/02-qemu",
+  "src/uart-take-2",
 ]
 
 [profile.release]
