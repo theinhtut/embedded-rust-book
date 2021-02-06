@@ -1,0 +1,28 @@
+[package]
+name = "dht11-stm32f3"
+version = "0.1.0"
+authors = ["Thein Htut <theinhtut.dec@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = "0.6.0"
+cortex-m-rt = "0.6.10"
+cortex-m-semihosting = "0.3.3"
+embedded-hal = "^0.2.3"
+dht-sensor = "0.1.1"
+panic-halt = "0.2.0"
+# dht11 = "0.3.1"
+
+# cortex-m = "0.7.1"
+# cortex-m-rt = "0.6.13"
+# cortex-m-semihosting = "0.3.7"
+# panic-halt = "0.2.0"
+# dht-sensor = "0.1.1"
+
+
+
+[dependencies.stm32f3xx-hal]
+version = "0.6.1"
+features = ["stm32f303xc"]
