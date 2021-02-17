@@ -59,37 +59,3 @@ fn main() -> ! {
 
     loop {}
 }
-
-// #![no_std]
-// #![no_main]
-
-// use cortex_m_rt::entry;
-// use cortex_m_semihosting::hprintln;
-// use panic_halt as _;
-// use stm32f3xx_hal as hal;
-
-// use hal::pac;
-// use hal::prelude::*;
-
-// use dht_sensor::*;
-
-// use crate::hal::{delay, gpio, prelude::*, stm32};
-
-
-// #[entry]
-// fn main() -> ! {
-//     hprintln!("Starting our program...").unwrap();
-
-//     let mut dp = pac::Peripherals::take().unwrap();
-//     let mut flash = dp.FLASH.constrain();
-//     let mut rcc = dp.RCC.constrain();
-//     let clocks = rcc.cfgr.use_hse(8.mhz()).freeze(&mut flash.acr);
-
-//     // let mut delay = delay::
-
-//     let mut gpioa = dp.GPIOA.split(&mut rcc.ahb);
-
-//     loop {
-//         // your code goes here
-//     }
-// }
